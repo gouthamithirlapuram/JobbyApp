@@ -10,3 +10,67 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 50px);
+  justify-content: center;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 20px solid #ccc;
+}
+
+.cell.green {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.cell.yellow {
+  background-color: #c9b458;
+  color: white;
+}
+
+.cell.gray {
+  background-color: #787c7e;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+  width: 150px;
+}
